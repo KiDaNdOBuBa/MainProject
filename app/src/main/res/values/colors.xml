@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="cart_bg">#657954</color>
+    <color name="shoes_color">#EA1C1C</color>
+    <color name="beauty_color">#2E74FD</color>
+    <color name="apparel_color">#24FF91</color>
+    <color name="tab_bg_color">#00FFF7</color>
 </resources>
