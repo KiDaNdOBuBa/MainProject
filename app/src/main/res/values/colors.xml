@@ -12,4 +12,5 @@
     <color name="beauty_color">#2E74FD</color>
     <color name="apparel_color">#24FF91</color>
     <color name="tab_bg_color">#00FFF7</color>
+    <color name="toolbar_color">#243AA8</color>
 </resources>

@@ -35,7 +35,7 @@ class CartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart, container, false)
+        return inflater.inflate(R.layout.new_tab_layout, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -47,37 +47,66 @@ class CartFragment : Fragment() {
     }
 
     private fun inintView() {
-        tabLayout = requireActivity().findViewById(R.id.tab_menu)
-        pager = requireActivity().findViewById(R.id.view_pager)
+        tabLayout = requireActivity().findViewById(R.id.tab_menu_new)
+        pager = requireActivity().findViewById(R.id.view_pager_new)
     }
+
 
     private fun initTabLayout() {
         TabLayoutMediator(tabLayout, pager) { tab, position ->
             when (position) {
                 0 -> {
-                    tab.text = "Apparel"
-                    tab.setIcon(R.drawable.ic_cart)
+                    tab.text = "ONE"
+                    tab.setIcon(R.drawable.ic_heart)
                     tab.icon?.setTint(
-                        ContextCompat.getColor(requireContext(),R.color.apparel_color)
+                        ContextCompat.getColor(requireContext(),R.color.white)
                     )
                 }
                 1 -> {
-                    tab.text = "Beauty"
-                    tab.setIcon(R.drawable.ic_home)
+                    tab.text = "TWO"
+                    tab.setIcon(R.drawable.ic_phone)
                     tab.icon?.setTint(
-                        ContextCompat.getColor(requireContext(),R.color.beauty_color)
+                        ContextCompat.getColor(requireContext(),R.color.white)
                     )
                 }
                 2 -> {
-                    tab.text = "Shoes"
-                    tab.setIcon(R.drawable.ic_more)
+                    tab.text = "THREE"
+                    tab.setIcon(R.drawable.ic_person)
                     tab.icon?.setTint(
-                        ContextCompat.getColor(requireContext(),R.color.shoes_color)
+                        ContextCompat.getColor(requireContext(),R.color.white)
                     )
                 }
             }
         }.attach()
     }
+
+//    private fun initTabLayout() {
+//        TabLayoutMediator(tabLayout, pager) { tab, position ->
+//            when (position) {
+//                0 -> {
+//                    tab.text = "Apparel"
+//                    tab.setIcon(R.drawable.ic_cart)
+//                    tab.icon?.setTint(
+//                        ContextCompat.getColor(requireContext(),R.color.apparel_color)
+//                    )
+//                }
+//                1 -> {
+//                    tab.text = "Beauty"
+//                    tab.setIcon(R.drawable.ic_home)
+//                    tab.icon?.setTint(
+//                        ContextCompat.getColor(requireContext(),R.color.beauty_color)
+//                    )
+//                }
+//                2 -> {
+//                    tab.text = "Shoes"
+//                    tab.setIcon(R.drawable.ic_more)
+//                    tab.icon?.setTint(
+//                        ContextCompat.getColor(requireContext(),R.color.shoes_color)
+//                    )
+//                }
+//            }
+//        }.attach()
+//    }
 
     private fun initPager() {
         adapter = SectionAdapter(childFragmentManager, lifecycle, list)
