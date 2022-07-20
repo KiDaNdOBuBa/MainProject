@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/drawable/tab_draw.xml" value="0.1555" />
-        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/activity_main.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_apparel.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_beaty.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_beauty.xml" value="0.16032608695652173" />
@@ -15,8 +15,10 @@
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_search.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_shoes.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/nav_header.xml" value="0.15427350427350428" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/new_tab_layout.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/menu/nav_menu.xml" value="0.25842696629213485" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/menu/side_bar.xml" value="0.1" />
       </map>
     </option>
   </component>

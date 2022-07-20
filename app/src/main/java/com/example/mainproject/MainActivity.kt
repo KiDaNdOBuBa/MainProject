@@ -1,26 +1,38 @@
 package com.example.mainproject
 
 import android.os.Bundle
-import android.widget.FrameLayout
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.blue
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentContainerView
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.mainproject.Fragment.*
+import com.example.mainproject.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var bottomNav: BottomNavigationView
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.apply {
+            toggle = ActionBarDrawerToggle(
+                this@MainActivity,
+                drawerLayout,
+                R.string.open,
+                R.string.close
+            )
+            drawerLayout.addDrawerListener(toggle)
+            toggle.syncState()
 
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        }
         initView()
         bottomNav.setupWithNavController(navController)
+
 
     }
 

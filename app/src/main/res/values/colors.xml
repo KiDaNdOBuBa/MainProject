@@ -13,4 +13,5 @@
     <color name="apparel_color">#24FF91</color>
     <color name="tab_bg_color">#00FFF7</color>
     <color name="toolbar_color">#243AA8</color>
+    <color name="drawer_background">#1555D6</color>
 </resources>
