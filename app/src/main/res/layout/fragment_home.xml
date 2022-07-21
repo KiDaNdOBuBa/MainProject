@@ -5,18 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#546879"
-    android:visibility="visible"
     android:clickable="true"
+    android:visibility="visible"
     tools:context="Fragment.HomeFragment">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="186dp"
-        android:layout_height="194dp"
-        android:src="@drawable/ic_home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:id="@+id/bt_beauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_get_app"
+        app:layout_constraintEnd_toStartOf="@+id/bt_shoe"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_shoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_shoe"
+        app:layout_constraintEnd_toStartOf="@+id/imageView1"
+        app:layout_constraintStart_toEndOf="@+id/bt_beauty"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_shoe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

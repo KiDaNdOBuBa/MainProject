@@ -13,16 +13,7 @@ import com.example.mainproject.SectionAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [CartFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class CartFragment : Fragment() {
 
     private lateinit var tabLayout: TabLayout

@@ -40,4 +40,14 @@
         android:name="com.example.mainproject.Fragment.SideBarFragments.DataFragment"
         android:label="fragment_data"
         tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/beautyFragment"
+        android:name="com.example.mainproject.Fragment.BeautyFragment"
+        android:label="fragment_beauty"
+        tools:layout="@layout/fragment_beauty" />
+    <fragment
+        android:id="@+id/shoesFragment"
+        android:name="com.example.mainproject.Fragment.ShoesFragment"
+        android:label="fragment_shoes"
+        tools:layout="@layout/fragment_shoes" />
 </navigation>
