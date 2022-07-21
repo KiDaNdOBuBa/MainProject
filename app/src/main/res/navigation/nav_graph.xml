@@ -25,4 +25,19 @@
         android:id="@+id/searchFragment"
         android:name="com.example.mainproject.Fragment.SearchFragment"
         android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/wiFiListFragment"
+        android:name="com.example.mainproject.Fragment.SideBarFragments.WiFiListFragment"
+        android:label="fragment_wi_fi_list"
+        tools:layout="@layout/fragment_wi_fi_list" />
+    <fragment
+        android:id="@+id/wiFiOnMapFragment"
+        android:name="com.example.mainproject.Fragment.SideBarFragments.WiFiOnMapFragment"
+        android:label="fragment_wi_fi_on_map"
+        tools:layout="@layout/fragment_wi_fi_on_map" />
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.example.mainproject.Fragment.SideBarFragments.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
 </navigation>
