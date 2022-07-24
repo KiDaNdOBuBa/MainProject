@@ -15,20 +15,6 @@ import com.example.mainproject.R
 class ShoesAdapter(var list: List<ShoeClass>) :
     RecyclerView.Adapter<ShoesAdapter.ShoesViewHolder>() {
 
-    class ShoesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val name: AppCompatTextView
-        val image: AppCompatImageView
-        val idkWhat: AppCompatTextView
-        val price: AppCompatTextView
-
-        init {
-            image = itemView.findViewById(R.id.image)
-            name = itemView.findViewById(R.id.shoe_name)
-            idkWhat = itemView.findViewById(R.id.idk_what)
-            price = itemView.findViewById(R.id.shoe_price)
-        }
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShoesViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = layoutInflater.inflate(R.layout.item_shoes_list, parent, false)
@@ -43,17 +29,24 @@ class ShoesAdapter(var list: List<ShoeClass>) :
             price.text = flower.price
             idkWhat.text = flower.idkWhat
             Glide.with(itemView).load(flower.imageUrl).into(image)
-            itemView.setOnClickListener {
-                selectedItemPosition = position
-                if (position == selectedItemPosition) {
-                    itemView.setBackgroundColor(getColor(itemView.context, R.color.black))
-                } else {
-                    itemView.setBackgroundColor(getColor(itemView.context, R.color.white))
-                }
-            }
+
         }
     }
 
     override fun getItemCount(): Int = list.size
+
+    class ShoesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val name: AppCompatTextView
+        val image: AppCompatImageView
+        val idkWhat: AppCompatTextView
+        val price: AppCompatTextView
+
+        init {
+            image = itemView.findViewById(R.id.image)
+            name = itemView.findViewById(R.id.shoe_name)
+            idkWhat = itemView.findViewById(R.id.idk_what)
+            price = itemView.findViewById(R.id.shoe_price)
+        }
+    }
 
 }
