@@ -49,5 +49,27 @@
         android:id="@+id/shoesFragment"
         android:name="com.example.mainproject.Fragment.ShoesFragment"
         android:label="fragment_shoes"
-        tools:layout="@layout/fragment_shoes" />
+        tools:layout="@layout/fragment_shoes" >
+        <action
+            android:id="@+id/action_shoesFragment_to_shoeItemFragment"
+            app:destination="@id/shoeItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeItemFragment"
+        android:name="com.example.mainproject.Fragment.ShoeItemFragment"
+        android:label="fragment_shoe_item"
+        tools:layout="@layout/fragment_shoe_item" >
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="shoe_title"
+            app:argType="string"/>
+    </fragment>
 </navigation>

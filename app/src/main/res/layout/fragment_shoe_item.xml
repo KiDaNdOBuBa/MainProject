@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ShoeItemFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_shoe"
+        android:layout_width="@dimen/dimen_110"
+        android:layout_height="@dimen/dimen_110"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/shoe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:textSize="@dimen/dimen_40sp"
+        app:layout_constraintEnd_toStartOf="@+id/price"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_shoe"
+        tools:text="Nike" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shoe_title"
+        app:layout_constraintTop_toBottomOf="@+id/iv_shoe"
+        tools:text="200$" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/shoe_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_110"
+        android:textSize="@dimen/dimen_25sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_shoe"
+        app:layout_constraintStart_toStartOf="@+id/iv_shoe"
+        app:layout_constraintTop_toBottomOf="@+id/iv_shoe"
+        tools:text="@tools:sample/lorem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
