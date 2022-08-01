@@ -27,7 +27,7 @@ class ShoeItemFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentShoeItemBinding.bind(view)
 
-        Glide.with(requireContext()).load(args.imageUrl).into(binding.ivShoe)
+        Glide.with(requireContext()).load(args.imageUrl).centerCrop().into(binding.ivShoe)
         binding.shoeTitle.text = args.title
         binding.shoeInfo.text = args.shoeTitle
         binding.price.text = args.price

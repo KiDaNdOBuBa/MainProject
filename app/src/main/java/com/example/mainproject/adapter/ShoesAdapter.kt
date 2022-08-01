@@ -9,11 +9,11 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.mainproject.model.ShoeClass
+import com.example.mainproject.model.ShoeModel
 import com.example.mainproject.R
 
 class ShoesAdapter(
-    var itemList: ArrayList<ShoeClass>,
+    var itemList: ArrayList<ShoeModel>,
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     var selectedPosition = -1
     var onItemClickListener: OnItemClickListener? = null
@@ -50,7 +50,7 @@ class ShoesAdapter(
                 is ShoesViewHolder -> {
                     name.text = shoe.name
                     price.text = shoe.price
-                    Glide.with(itemView.context).load(shoe.imageUrl).into(image)
+                    Glide.with(itemView.context).load(shoe.imageUrl).centerCrop().into(image)
                     itemView.setOnClickListener {
                         selectedPosition = position
                         notifyDataSetChanged()
@@ -78,7 +78,7 @@ class ShoesAdapter(
     }
 
     interface OnItemClickListener {
-        fun onItemClick(shoes: ShoeClass)
+        fun onItemClick(shoes: ShoeModel)
     }
 
     inner class ShoesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

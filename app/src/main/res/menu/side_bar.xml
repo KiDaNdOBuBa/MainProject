@@ -22,6 +22,10 @@
                 android:id="@+id/add"
                 android:icon="@drawable/ic_add"
                 android:title="@string/add_hidden_network" />
+            <item
+                android:id="@id/settingsFragment"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/add_hidden_network" />
         </menu>
     </item>
 

@@ -20,4 +20,9 @@
     <string name="la">la la la la la la la la la la la la la la la la la la la la la</string>
     <string name="e_17_eu">17 EU</string>
     <string name="shoe_price">172.5 AED</string>
+    <string name="item_text">something</string>
+    <string name="Camera_title">Camera</string>
+    <string name="Contacts_title">Contacts</string>
+    <string name="Location_title">Location</string>
+    <string name="Storage_title">Storage</string>
 </resources>

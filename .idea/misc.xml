@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/drawable/ic_add.xml" value="0.1245" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/drawable/ic_get_app.xml" value="0.1685" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/drawable/ic_home.xml" value="0.1685" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/drawable/tab_draw.xml" value="0.1555" />
@@ -18,11 +19,13 @@
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_more.xml" value="0.1" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_search.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_settings.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_shoe_item.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_shoes.xml" value="0.14" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_wi_fi_list.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_wi_fi_on_map.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/fragment_wifi.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/item_settings.xml" value="0.18697916666666667" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/item_shoe.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/item_shoe_reverse.xml" value="0.15341880341880343" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/item_shoes_list.xml" value="0.1" />
@@ -31,7 +34,7 @@
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/new_tab_layout.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/layout/shoes_list_style.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/menu/nav_menu.xml" value="0.25842696629213485" />
-        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/menu/side_bar.xml" value="0.1" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/MainProject/app/src/main/res/menu/side_bar.xml" value="0.25" />
         <entry key="..\:/Users/rober/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_activated_1.xml" value="0.1" />
       </map>
     </option>

@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
             android:layout_width="@dimen/dimen_100"
             android:layout_height="@dimen/dimen_100"
             app:layout_constraintBottom_toBottomOf="parent"

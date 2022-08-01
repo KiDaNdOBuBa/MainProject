@@ -1,6 +1,6 @@
 package com.example.mainproject.model
 
-data class ShoeClass (
+data class ShoeModel (
     var imageUrl: String,
     var name: String,
     var idkWhat: String,
